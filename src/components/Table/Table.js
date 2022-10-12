@@ -33,8 +33,6 @@ const Table = () => {
            return item.id === id ? { id, amount: amount } : item;
        })
         setItem(updated) 
-        
-        console.log(item)
     }
 
     const submitHandler = () => {
