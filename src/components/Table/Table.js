@@ -43,9 +43,9 @@ const Table = () => {
     return (
         <div className="container">
             <div className='btnBox'>
-                <button onClick={createRow}>Insert New Row</button>
-                <button onClick={handleClear}>Clear Row</button>
-               {item.length > 0 && <button onClick={submitHandler}>Submit</button>}
+                <button className='newRowBtn' onClick={createRow}>Insert New Row</button>
+                <button className={item.length<1 ? 'clrBtn1' :'clrBtn'} onClick={handleClear}>Clear Row</button>
+               {item.length > 0 && <button className='submitBtn' onClick={submitHandler}>Submit</button>}
             </div>
             <div className="tableContainer">
                 <table border={1} cellPadding={10}>
@@ -70,7 +70,7 @@ const Table = () => {
                                     }
                                 </td>
                                 <td>
-                                    <button onClick={() => handleDelete(item.id)}>Delete</button>
+                                    <button className='dltBtn' onClick={() => handleDelete(item.id)}>Delete</button>
                                 </td>
                             </tr>
                         })

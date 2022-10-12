@@ -12,3 +12,52 @@
 /* .tableContainer{
     align-items: center;
 } */
+.dltBtn{
+    background:red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.newRowBtn{
+    background:green;
+    color: white;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.clrBtn1{
+    background:rgb(47, 11, 38);
+    color: white;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 800;
+    cursor: no-drop;
+}
+.clrBtn{
+    background:rgb(225, 8, 171);
+    color: white;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.submitBtn{
+    background:rgb(39, 115, 236);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 800;
+    cursor: pointer;
+}
