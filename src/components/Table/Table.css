@@ -1,4 +1,7 @@
-
+.btnBox{
+    margin-bottom: 20px;
+    padding: 10px;
+}
 .container{
     width: 100%;
     display: flex;

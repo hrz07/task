@@ -6,12 +6,18 @@ const Table = () => {
 
     const [item, setItem] = useState([])
     const createRow = () => {
-        console.log('first')
+        let newItem = {
+            id: uuidv4(),
+            amount: ""
+        }
+
+        setItem([...item, newItem])
+
     }
 
     return (
         <div className="container">
-            <div>
+            <div className='btnBox'>
                 <button onClick={createRow}>Insert New Row</button>
                 <button>Clear Row</button>
                 <button>Submit</button>
@@ -27,15 +33,19 @@ const Table = () => {
                     </thead>
 
                     <tbody>
-                        <tr>
-                            <td>Item 1</td>
-                            <td>
-                            <input type="text" />
-                            </td>
-                            <td>
-                                <button>Delete</button>
-                            </td>
-                        </tr>
+                        {item.map((item, index) => {
+
+                            return <tr key={item.id}>
+                                <td>Item {index+1}</td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                                <td>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                        })
+                        }
                     </tbody>
                 </table>
             </div>
